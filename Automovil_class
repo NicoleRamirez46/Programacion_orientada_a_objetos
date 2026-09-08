@@ -1,0 +1,73 @@
+package automovil;
+
+public class Automovil {
+
+     
+    String fabricante;
+    String modelo;
+    String color;
+    double cilindraje;
+       
+    public Automovil(String fabricante, String modelo, String color, double cilindraje) {
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.color = color;
+        this.cilindraje = cilindraje;
+    }
+    public String verDetalle(){
+        return "Fabricante: " + this.fabricante + "Modelo" + this.modelo + "Color: " + this.color + "Cilindraje: " + this.cilindraje;
+    }
+          
+    public String acelerar(int rpm) {
+        return "El auto " + this.fabricante + " esta acelerando a " + rpm + " revoluciones por minuto";
+    }
+    
+    public String frenar(){
+        return "El auto " + this.fabricante + "esta frenando";
+    }
+    
+    public String acelerarFrenar(int rpm){
+        return acelerar(rpm) + "y" + frenar();
+        }
+            }
+//MAIN CLASS
+package automovil;
+
+public class Main {
+
+public static void main(String[] args) {
+        
+ Automovil automovil1 = new Automovil("Ferrari", "2020", "Morado", 2.0 );
+ Automovil automovil4 = new Automovil("Mercedes", "2013", "Azul", 6.6 );
+ Automovil automovil5 = new Automovil("Nissan", "2024", "Dorado", 3.3);
+ Automovil automovil6 = new Automovil("Hyundai", "2008", "Rosado", 7.0);
+ Automovil automovil7 = new Automovil("Chevrolet", "2020", "Celeste", 5.0);
+
+   System.out.println(automovil1.verDetalle());
+   System.out.println(automovil1.acelerar(3000));
+   System.out.println(automovil1.frenar());
+   System.out.println(automovil1.acelerarFrenar(4000));
+
+   System.out.println(automovil4.verDetalle());
+   System.out.println(automovil4.acelerar(3000));
+   System.out.println(automovil4.frenar());
+   System.out.println(automovil4.acelerarFrenar(4000));
+
+   System.out.println(automovil5.verDetalle());
+   System.out.println(automovil5.acelerar(2500));
+   System.out.println(automovil5.frenar());
+   System.out.println(automovil5.acelerarFrenar(3500));
+
+   System.out.println(automovil6.verDetalle());
+   System.out.println(automovil6.acelerar(4000));
+   System.out.println(automovil6.frenar());
+   System.out.println(automovil6.acelerarFrenar(5000));
+
+   System.out.println(automovil7.verDetalle());
+   System.out.println(automovil7.acelerar(2000));
+   System.out.println(automovil7.frenar());
+   System.out.println(automovil7.acelerarFrenar(3000));
+    }
+}
+
+
