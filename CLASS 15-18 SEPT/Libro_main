@@ -1,0 +1,30 @@
+public class Sesion7 {
+
+    public static void main(String[] args) {
+        Libro Libro1 = new Libro();
+        Libro1.setTitulo("Satanas");
+        Libro1.setAutor("Mario Mendoza");
+        Libro1.setGenero("Novela");
+        Libro1.setNumPaginas(500);
+        
+        System.out.println(Libro1.getTitulo());
+        System.out.println(Libro1.getAutor());
+        System.out.println(Libro1.getGenero());
+        System.out.println(Libro1.getNumPaginas());
+        
+        Libro1.verDetalle();
+        System.out.println("\nDetalle del libro");
+        System.out.println(Libro1.verDetalle());
+        
+        System.out.println("\n Libro prestado a: ");
+        System.out.println(Libro1.prestar("Nicole"));
+        
+        System.out.println("\n Libro prestado y devolvuelto");
+        System.out.println(Libro1.prestarYDevolver("Nicole"));
+        
+        System.out.println("\n Tiempo de Lectura: ");
+        System.out.println(Libro1.calcularTiempoLectura(30, 2.6f));
+    }
+     
+    
+}
