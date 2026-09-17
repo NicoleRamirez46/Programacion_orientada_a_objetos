@@ -1,0 +1,39 @@
+package automov1l;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+    Automov1l automovil1 = new Automov1l("Toyota", "1980", "Naranja", 4.0, 90);
+    Automov1l automovil2 = new Automov1l("Ferrari", "2024", " Dorado", 5.0, 65);
+    Automov1l automovil3 = new Automov1l("Chevrolet", "2024", "Rojo", 1.3, 76);
+    Automov1l automovil4 = new Automov1l("Mitsubishi", "Eclipse GS", "Azul", 2.0, 63);
+    Automov1l automovil5 = new Automov1l("Dodge", "Charger R/T", "Morado", 7.0, 75);
+
+   System.out.println(automovil1.verDetalle());
+   System.out.println(automovil1.acelerar(3000));
+   System.out.println(automovil1.frenar());
+   System.out.println(automovil1.acelerarFrenar(4000));
+
+   System.out.println(automovil2.verDetalle());
+   System.out.println(automovil2.acelerar(3000));
+   System.out.println(automovil2.frenar());
+   System.out.println(automovil2.acelerarFrenar(4000));
+
+   System.out.println(automovil3.verDetalle());
+   System.out.println(automovil3.acelerar(2500));
+   System.out.println(automovil3.frenar());
+   System.out.println(automovil3.acelerarFrenar(3500));
+
+   System.out.println(automovil4.verDetalle());
+   System.out.println(automovil4.acelerar(4000));
+   System.out.println(automovil4.frenar());
+   System.out.println(automovil4.acelerarFrenar(5000));
+
+   System.out.println(automovil5.verDetalle());
+   System.out.println(automovil5.acelerar(2000));
+   System.out.println(automovil5.frenar());
+   System.out.println(automovil5.acelerarFrenar(3000));
+    }
+}
+
