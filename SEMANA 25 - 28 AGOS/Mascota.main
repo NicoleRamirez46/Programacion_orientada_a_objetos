@@ -1,0 +1,7 @@
+
+Mascota mascota1 = new Mascota("Eva", "Perro", 7);
+mascota1.mostrarInfo();
+System.out.println(mascota1.nombre);
+Mascota mascota2 = new Mascota("Leah", "Gato", 6);
+mascota2.mostrarInfo();
+System.out.println(mascota2.nombre);
