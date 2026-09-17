@@ -1,0 +1,24 @@
+package automovil;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+    Automovil automovil1 = new Automovil("Subaru", "Impreza", "Blanco", 2.0, 40);
+    Automovil automovil2 = new Automovil("Mazda", "BT-50", "Rojo", 3.0, 60);
+
+    System.out.println(automovil1.verDetalle());
+    System.out.println(automovil1.acelerar(3000));
+    System.out.println(automovil1.frenar());
+    System.out.println(automovil1.acelerarFrenar(4000));
+    System.out.println(automovil1.calcularConsumo(300, 0.60f));
+    System.out.println(automovil1.calcularConsumo(300, 60));
+
+    System.out.println(automovil2.verDetalle());
+    System.out.println(automovil2.acelerar(3000));
+    System.out.println(automovil2.frenar());
+    System.out.println(automovil2.acelerarFrenar(4000));
+    System.out.println(automovil2.calcularConsumo(300, 0.60f));
+    System.out.println(automovil2.calcularConsumo(300, 60));
+    }
+}
