@@ -1,0 +1,17 @@
+package empleado;
+
+/**
+ *
+ * @author prestamo
+ */
+public class Empleado {
+    public static void main(String[] args) {
+    Empleado Empleado1 = new Empleado ();
+        
+        System.out.println("El nombre del empleado es: ");
+        
+        System.out.println("El cargo del empleado es: ");
+        
+    }
+    
+}
