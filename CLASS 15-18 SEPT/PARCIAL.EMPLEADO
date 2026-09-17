@@ -1,0 +1,87 @@
+Santiago Muñoz
+Nicole Ramirez
+package empleado;
+public class E_MPLEADO {
+    private String Nombre;
+    private String Cargo;
+    private Double salarioBase;
+    private int añosExperiencia;
+
+    public E_MPLEADO() {
+    }
+
+    public E_MPLEADO(String Nombre, String Cargo, Double salarioBase, int añosExperiencia) {
+        this.Nombre = Nombre;
+        this.Cargo = Cargo;
+        this.salarioBase = salarioBase;
+        this.añosExperiencia = añosExperiencia;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public String getCargo() {
+        return Cargo;
+    }
+
+    public Double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public int getAñosExperiencia() {
+        return añosExperiencia;
+    }
+
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+
+    public void setCargo(String Cargo) {
+        this.Cargo = Cargo;
+    }
+
+    public void setSalarioBase(Double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
+    public void setAñosExperiencia(int añosExperiencia) {
+        this.añosExperiencia = añosExperiencia;
+    }
+    
+    
+    
+    public String verDetalle(){
+        String detalle = ("El nombre del empleado es: " + this.Nombre);
+        detalle = ("El cargo del empleado es: " + this.Cargo);
+        detalle = ("El salario base: " + salarioBase);
+        detalle = ("Los años de experiencia son: " + this.añosExperiencia);
+        return detalle;
+    }
+     
+    public String Trabajar(int horas){
+        return "El empleado llamado" +  this.Nombre + "trabaja" + horas + "a la semana";
+}
+    public String tomarDescanso() {
+        return "El empleado" + this.Nombre + "descansa el día: " + "de la semana";
+    }
+    
+    public String trabajarYdescansar(int horas) { 
+        return "El empleado llamado" + this.Nombre + "trabaja y descansa" + horas + "al mes";
+    }
+       
+    public double calcularBono(float porcentaje){
+        return (salarioBase *porcentaje/100);
+    }
+    
+    public double calcularBono(int porcentaje){
+        return (salarioBase *porcentaje/100);
+    }
+    
+    public double calcularSalarioTotal(double bono, int diasTrabajados){
+        int salarioDia;
+        return (salarioBase/30) * diasTrabajados;
+
+}
+}
+    }
