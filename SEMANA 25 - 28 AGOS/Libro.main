@@ -1,0 +1,6 @@
+Libro libro1 = new Libro("Cien años de Soledad", "Gabriel Garcia Marquez", 520);
+libro1.mostrarInfo();
+System.out.println(libro1.titulo);
+Libro libro2 = new Libro("Alguien que esta mintiendo", "John Ajvide Lindqvist", 496);
+libro2.mostrarInfo();
+System.out.println(libro2.titulo);
