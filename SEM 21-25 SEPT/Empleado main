@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package empleado;
+
+/**
+ *
+ * @author prestamo
+ */
+public class Empleado {
+    public static void main(String[] args) {
+        Empleado0 empleado1 = new Empleado0();
+    empleado1.setNombre("Nicole");
+    empleado1.setCargo("Supervisora");
+    empleado1.setSalarioBase(6000000);
+    empleado1.setAnosExperiencia(5);
+        System.out.println("Nombre: " + empleado1.getNombre() + "\nCargo: " + empleado1.getCargo() + "\nEl salario es: "  + empleado1.getSalarioBase() + "\nLos años de experiencia son: " + empleado1.getAnosExperiencia());
+        System.out.println(empleado1.verDetalle());
+        System.out.println(empleado1.trabajar(6));
+        System.out.println(empleado1.tomarDescanso());
+        System.out.println(empleado1.trabajarYdescansar(8));
+        System.out.println(empleado1.calcularBono(100));
+        System.out.println(empleado1.calcularBono(0));
+        System.out.println(empleado1.calcularSalario(500, 7));
+     
+    
+    
+        
+    }
+}
