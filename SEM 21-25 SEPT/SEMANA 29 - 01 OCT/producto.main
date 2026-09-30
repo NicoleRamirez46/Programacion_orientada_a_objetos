@@ -1,0 +1,23 @@
+package producto;
+
+/**
+ *
+ * @author prestamo
+ */
+public class Producto {
+    public static void main(String[] args) {
+    ProductoA producto1 = new ProductoA();
+    producto1.setNombre("Computador portatil");
+    producto1.setCategoria("Tecnologia");
+    producto1.setPrecio(2500000);
+    producto1.setCantidadStock(8);
+        System.out.println("Nombre: " + producto1.getNombre() + "\n Categoría: " + producto1.getCategoria() + "\n Precio" + producto1.getPrecio() + "\nCantidad Stock: " + producto1.getCantidadStock());
+        System.out.println(producto1.verDetalle());
+        System.out.println(producto1.calcularDescuento(10));
+        System.out.println(producto1.calcularDescuento(10));
+        System.out.print(producto1.calcularPrecioFinal(10));
+        System.out.print(producto1.Vender(2));
+    
+    }
+    
+}
