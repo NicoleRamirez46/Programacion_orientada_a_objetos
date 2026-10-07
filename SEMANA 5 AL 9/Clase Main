@@ -1,0 +1,48 @@
+package jherencia;
+
+public class Jherencia {
+
+ 
+    public static void main(String[] args) {
+        Animal animal1 = new Animal (); {
+        animal1.setEspecie("Mamifero \n");
+        System.out.println(animal1.getEspecie());
+        animal1.comer();
+        animal1.dormir();
+        
+        
+        Perro perro1 = new Perro(); {
+        perro1.setEspecie("Mamifero ");
+        perro1.setRaza("Labrador");
+        System.out.println(perro1.getRaza());
+        perro1.hacerSonido();
+        perro1.comer();
+        perro1.dormir();
+        
+        Perro perro2 = new Perro ("Mamifero ", "Pitbull"); 
+           System.out.println("La especie del perro 2 es: " + perro2.getEspecie());
+          
+        
+           
+        Gato gato1 =  new Gato (); {
+        gato1.setEspecie("Mamifero ");
+        gato1.setRaza("Persa");
+        gato1.setColor("Blanco");
+        gato1.hacerSonido();
+        gato1.comer();
+        gato1.dormir();
+        gato1.color();
+        gato1.jugar();
+        
+        
+        Pajaro pajaro1 = new Pajaro(); { 
+        pajaro1.setEspecie("Mamifero ");
+        pajaro1.setNombre("Colibrí");
+        pajaro1.setColorPlumas("Azul, morado, verde");
+        pajaro1.Cantar();
+        pajaro1.Volar();
+        pajaro1.colorPlumas();
+        pajaro1.comer();
+        pajaro1.dormir();
+        
+        }
