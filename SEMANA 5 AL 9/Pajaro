@@ -1,0 +1,53 @@
+package jherencia;
+
+/**
+ *
+ * @author prestamo
+ */
+class Pajaro extends Animal {
+    private String nombre;
+    private String colorPlumas;
+
+    public Pajaro() {
+    }
+    
+    public Pajaro(String especie, String raza) {
+        super(especie);
+        this.nombre = raza;
+        this.colorPlumas = colorPlumas;
+        
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getColorPlumas() {
+        return colorPlumas;
+    }
+
+    public void setColorPlumas(String colorPlumas) {
+        this.colorPlumas = colorPlumas;
+    }
+    
+     
+    public void Volar () { 
+            System.out.println("El pajaro vuela todos los dias");
+    }
+     
+    public void Cantar (){
+        System.out.println("El pajaro trina todos los dias");
+    }
+    public void colorPlumas (){
+        System.out.println("El color del gato es: " +  this.colorPlumas);
+    }
+    
+    public void jugar () {
+        System.out.println("El gato juega todos los dias");
+    }
+    
+}
